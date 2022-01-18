@@ -1,15 +1,13 @@
-import React, { Component } from "react";
+import React, { FC } from 'react';
+import Field from "./Field";
 
-import '../styles/App.css';
-
-class App extends Component {
-    render() {
-        return (
-            <div>
-                <h1>My React App!!!</h1>
-            </div>
-        );
-    }
-}
+const App: FC = () => {
+    return (
+        <>
+            <h1>Game of life</h1>
+            <Field width={10} height={8}/>
+        </>
+    );
+};
 
 export default App;
